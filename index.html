@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dublin Weather</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="intro">
+    <p>To help you plan ahead, we are here to provide you with as accurate prediction as possible of what the weather will be like in the next 5 days.</p>
+        </div>
+	<div class="hero">
+		<!-- navbar -->
+		<nav class="navbar">
+		  <a class="navbar-brand" href="#">
+		    <i class="fa fa-sun-o" aria-hidden="true"></i>
+		    <strong>Dublin</strong>Weather
+		  </a>
+		  <button onclick="date()" id="date" class="lead">11:00AM | May 20, 2019</button>
+		</nav>
+		<!-- weather section  -->
+		<div class="container">
+            <div class="row">
+            <div id="" class="col-8 mx-auto weather">
+					
+            <div class="weather-head">
+			<h1 id="location" class="text-center display-4">Dublin, Ireland</h1>
+			<div class="row">							
+			<div id="description" class="description col-6 text-center">
+			<img src="http://openweathermap.org/img/w/10d.png"/>
+			<p class="desc">thunderstorm</p>			
+			</div>
+			<div id="temperature" class="col-6 text-center">18</div>						 				
+								
+            </div>
+						
+            <div class="weather-body">					
+			<div class="row">
+			<div class="humidity col-4 text-center">
+			<i class="wi wi-raindrop"></i><span> Humidity</span>
+			</div>
+			<div class="wind col-4 text-center">
+			<i class="wi wi-strong-wind"></i><span> Wind Speed</span>
+			</div>
+			<div class="pressure col-4 text-center">
+			<span> Pressure</span>
+			</div>				
+			</div>
+							
+			<div class="row">
+			<div id="humidity" class="humidity-data col-4 text-center">75%</div>
+									
+			<div id="wind" class="wind-data col-4 text-center">34mph</div>				
+								
+			<div id="pressure" class="degree-data col-4 text-center">15</div>									
+								
+							</div>
+						</div>						
+					</div>					
+				</div>
+			</div>
+		</div>
+		
+	</div>
+    	
+    <div id="form">
+        <form >
+								
+		<div class="drop-down list">
+		<p class="drop-down menu">Select number of days to be displayed</p>
+        </div>      
+        
+		<div>
+        <select class="dailyForecast" name="days" >
+        <option id="1" selected="selected">1</option>        
+        <option id="5">5</option>
+        </select>
+        <div class="dropDownSelect">
+        </div>
+		</div>
+        </form>
+                        
+		<div class="checkbox">			
+		<p>Select one or more features to be displayed</p>
+        <div id="checkbox">            
+        <form>
+        <input type="checkbox" name="Pressure" value="Pressure">Pressure<br>
+        <input type="checkbox" name="Humidity" value="Humidity">Humidity<br>
+        <input type="checkbox" name="WindSpeed" value="WindSpeed">Wind speed<br><br>       
+        <button onclick="location.href='forecast.html'" id="submit" type="button">
+         button</button>
+            
+			</form>
+          </div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+    </body>
+    
+</html>

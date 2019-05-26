@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="forecast.css">
+</head>
+<body>
+    
+	<div class="hero">
+		<!-- navbar -->
+		<nav class="navbar">
+		  <a class="navbar-brand" href="#">
+		    <i class="fa fa-sun-o" aria-hidden="true"></i>
+		    <strong>Dublin</strong>Weather
+		  </a>
+            <button onclick="date()" id="date" class="lead">11:00AM | May 20, 2019</button></nav>
+    </div>
+    <div class="container">
+    <div class="wrapper">
+    <div id="Monday">
+    <img id="icon1" src="http://openweathermap.org/img/w/01d.png">
+        <button onclick="day1()" id="day1">Monday</button>
+    
+        <h2 id="temperature1">12&deg;</h2>
+        <div class="humidity">
+      <p>Humidity</p>        
+      <p id="humidity1">100%</p>
+        </div>
+        <div id="pressure">
+      <p>Pressure</p> 
+      <p id="pressure1">1030 mb</p>
+        </div>
+        <div class="windspeed">
+        <p>Wind speed</p>
+      <p id="windspeed1">9 km/h</p>
+        </div>
+        </div>
+        </div>   
+    
+     
+    <div class="wrapper">
+    <div id="Tuesday">
+    <img id="icon2" src="http://openweathermap.org/img/w/01d.png">
+    <button onclick="day2()" id="day2">Monday</button>
+    
+    <h2 id="temperature2">12&deg;</h2>
+        <div class="humidity">
+      <p>Humidity</p>
+      <p id="humidity2">100%</p>
+        </div>
+        <div class="pressure">
+      <p>Pressure</p> 
+      <p id="pressure2">1034 mb</p>
+        </div>
+        <div class="windspeed">
+      <p>Wind speed</p>
+      <p id="windspeed2">5 km/h</p>
+        </div>
+        </div>
+    </div>
+        
+        <div class="wrapper">
+        <div id="Wednesday">
+    <img id="icon3" src="http://openweathermap.org/img/w/02d.png">
+    <button onclick="day3()" id="day3">Monday</button>
+    <h2 id="temperature3">12&deg;</h2>
+       <div class="humidity">     
+      <p>Humidity</p>
+      <p id="humidity3">100%</p>
+            </div>
+        <div class="pressure">
+      <p>Pressure</p> 
+      <p id="pressure3">1033 mb</p>
+            </div>
+        <div class="windspeed">
+      <p>Wind speed</p>
+      <p id="windspeed3">2 km/h</p>
+            </div>
+            </div>
+    </div>
+        
+        <div class="wrapper">
+        <div id="Thursday">
+    <img id="icon4" src="http://openweathermap.org/img/w/10d.png">
+   <button onclick="day4()" id="day4">Monday</button>
+    
+    <h2 id="temperature4">12&deg;</h2>
+        <div class="humidity">
+      <p>Humidity</p>
+      <p id="humidity4">0%</p>
+            </div>
+        <div class="pressure">
+      <p>Pressure</p> 
+      <p id="pressure4">1034 mb</p>
+            </div>
+        <div class="windspeed">
+      <p>Wind speed</p>
+      <p id="windspeed4">1 km/h</p>
+            </div>
+            </div>
+    </div>
+        
+        <div class="wrapper">
+        <div id="Friday">
+    <img id="icon5" src="http://openweathermap.org/img/w/10d.png">
+   <button onclick="day5()" id="day5">Monday</button>
+    
+    <h2 id="temperature5">12&deg;</h2>
+        <div class="humidity">
+      <p>Humidity</p>
+      <p id="humidity5">0%</p>
+            </div>
+        <div class="pressure">
+      <p>Pressure</p> 
+      <p id="pressure5">1027 mb</p>
+            </div>
+        <div class="windspeed">
+      <p>Wind speed</p>
+      <p id="windspeed5">4 km/h</p>
+           </div> 
+            </div>
+    </div>    
+   </div>
+   <div id="myTable">
+    <table id="detailed1">
+    <tr>
+        <th id="t1">09:00</th>
+        <th id="t2">12:00</th>
+        <th id="t3">15:00</th>
+        <th id="t4">18:00</th>
+        <th id="t5">21:00</th>
+        <th id="t6">00:00</th>
+        <th id="t7">03:00</th>
+        <th id="t8">06:00</th>
+        </tr>
+        <tr>
+        <td id="d1">10&deg;</td>
+        <td id="d2">12&deg;</td>
+        <td id="d3">12&deg;</td>
+        <td id="d4">11&deg;</td>
+        <td id="d5">11&deg;</td>
+        <td id="d6">10&deg;</td>
+        <td id="d7">10&deg;</td>
+        <td id="d8">10&deg;</td>
+                
+        </tr>
+    </table>
+       
+    <table id="detailed2">
+    <tr>
+        <th id="t11">09:00</th>
+        <th id="t21">12:00</th>
+        <th id="t31">15:00</th>
+        <th id="t41">18:00</th>
+        <th id="t51">21:00</th>
+        <th id="t61">00:00</th>
+        <th id="t71">03:00</th>
+        <th id="t81">06:00</th>
+        </tr>
+        <tr>
+        <td id="d11">10&deg;</td>
+        <td id="d21">12&deg;</td>
+        <td id="d31">12&deg;</td>
+        <td id="d41">11&deg;</td>
+        <td id="d51">11&deg;</td>
+        <td id="d61">10&deg;</td>
+        <td id="d71">10&deg;</td>
+        <td id="d81">10&deg;</td>
+                
+        </tr>
+    </table>
+        <table id="detailed3">
+    <tr>
+        <th id="t12">09:00</th>
+        <th id="t22">12:00</th>
+        <th id="t32">15:00</th>
+        <th id="t42">18:00</th>
+        <th id="t52">21:00</th>
+        <th id="t62">00:00</th>
+        <th id="t72">03:00</th>
+        <th id="t82">06:00</th>
+        </tr>
+        <tr>
+        <td id="d12">10&deg;</td>
+        <td id="d22">12&deg;</td>
+        <td id="d32">12&deg;</td>
+        <td id="d42">11&deg;</td>
+        <td id="d52">11&deg;</td>
+        <td id="d62">10&deg;</td>
+        <td id="d72">10&deg;</td>
+        <td id="d82">10&deg;</td>
+                
+        </tr>
+    </table>
+        <table id="detailed4">
+    <tr>
+        <th id="t13">09:00</th>
+        <th id="t23">12:00</th>
+        <th id="t33">15:00</th>
+        <th id="t43">18:00</th>
+        <th id="t53">21:00</th>
+        <th id="t63">00:00</th>
+        <th id="t73">03:00</th>
+        <th id="t83">06:00</th>
+        </tr>
+        <tr>
+        <td id="d13">10&deg;</td>
+        <td id="d23">12&deg;</td>
+        <td id="d33">12&deg;</td>
+        <td id="d43">11&deg;</td>
+        <td id="d53">11&deg;</td>
+        <td id="d63">10&deg;</td>
+        <td id="d73">10&deg;</td>
+        <td id="d83">10&deg;</td>
+                
+        </tr>
+    </table>
+        <table id="detailed5">
+    <tr>
+        <th id="t14">09:00</th>
+        <th id="t24">12:00</th>
+        <th id="t34">15:00</th>
+        <th id="t44">18:00</th>
+        <th id="t54">21:00</th>
+        <th id="t64">00:00</th>
+        <th id="t74">03:00</th>
+        <th id="t84">06:00</th>
+        </tr>
+        <tr>
+        <td id="d14">10&deg;</td>
+        <td id="d24">12&deg;</td>
+        <td id="d34">12&deg;</td>
+        <td id="d44">11&deg;</td>
+        <td id="d54">11&deg;</td>
+        <td id="d64">10&deg;</td>
+        <td id="d74">10&deg;</td>
+        <td id="d84">10&deg;</td>
+                
+        </tr>
+    </table>
+    </div>
+    <div id="array5Days"> </div>
+    <label id="array4Days"> </label>
+    <label id="array3Days"> </label>
+    <label id="array2Days"> </label>
+    <script src="forecast.js"></script>
+    <script src="weather.js"></script>    
+    </body>
+</html>

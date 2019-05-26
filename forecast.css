@@ -1,0 +1,94 @@
+body {
+	background-image: url("http://www.sunriseadventuresports.com/wp-content/uploads/2018/10/Weather-Desktop-Pictures.jpg");
+}
+.navbar {
+	background-color: rgb(69, 106, 171);
+}
+.navbar a {
+	color: white;
+	font-size: 25px;
+}
+.hero {
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(31, 34, 118, 0.5);
+    z-index: -5;
+}
+
+.intro {
+    position: relative;
+    margin-top: 5rem;
+    align-content: center;
+    left: 4rem;
+    right: 10rem;
+    font-size: 20px;
+}
+.wrapper {
+    margin-top: 10rem;
+    background-color: black;
+	width: 18.7%;
+	height: 380px;
+	border: 1px solid black;
+	text-align: center;
+	display: inline-grid;
+    grid-auto-rows: 10% 15% 10% 15% 15% 15% 10% 10%;
+    padding: 5px 5px;    
+    color: white;
+    opacity: 0.5;
+}
+ #day1, #day2, #day3, #day4, #day5 {
+            border: none;
+            color: white;
+            background-color: black;
+            font-size: 20px;
+        }
+.humidity {
+    display: block;
+    border: 1px solid white;
+}
+.pressure {
+    display: block;
+}
+.windspeed {
+    display: block;
+    border: 1px solid white;
+}
+
+
+#array5Days {
+  background-color: black;
+	width: 18.7%;
+	height: 320px;
+	border: 1px solid black;
+	margin: 0 auto;
+	text-align: center;
+	display: inline-grid;
+    grid-auto-rows: 10% 15% 10% 15% 15% 15% 10% 10%;
+    padding: 5px 5px;    
+    color: white;
+    opacity: 0.5;
+    grid-template-columns: auto;
+    display: none;
+}
+    footer {
+    
+    margin-top: 250rem;
+   margin-bottom: 5rem;
+}
+
+#myTable {
+   
+  text-align: center;
+  background-color: rgba(31, 34, 118, 0.5);
+  color: white;
+    font-stretch: ultra-expanded;
+    display: block;
+     
+}
+    
+#detailed1, #detailed2, #detailed3, #detailed4, #detailed5 {
+    display: none;
+}        
